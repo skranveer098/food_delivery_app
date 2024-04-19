@@ -6,13 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "build":"npm i"
+    "build": "npm i"
   },
   "author": "Ranveer Singh",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2",
     "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
     "express": "^4.18.1",
     "express-validator": "^6.14.0",
     "json-stringify-safe": "^5.0.1",
