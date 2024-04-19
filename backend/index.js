@@ -1,4 +1,6 @@
 
+const cors=require('cors')
+
 global.foodData = require('./db')(function call(err, data, CatData) {
   // console.log(data)
   if(err) console.log(err);
@@ -9,6 +11,8 @@ global.foodData = require('./db')(function call(err, data, CatData) {
 const express = require('express')
 const app = express()
 const port = 5000
+
+app.use(cors());
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "https://food-delivery-app-21vq.onrender.com");
   res.header(
